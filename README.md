@@ -1,6 +1,6 @@
 # Caddy-Cloudflare-S3
 
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-zenjoy%2Fcaddy--cloudflare--s3-blue?style=flat)](https://hub.docker.com/r/zenjoy/caddy-cloudflare-s3)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-zenjoy%2Fcaddy--cloudflare--s3-lightgrey?style=flat)](https://hub.docker.com/r/zenjoy/caddy-cloudflare-s3)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/zenjoy/docker-caddy-cloudflare-s3?label=version)](https://github.com/zenjoy/docker-caddy-cloudflare-s3/tags)
 [![License](https://img.shields.io/github/license/zenjoy/docker-caddy-cloudflare-s3)](https://github.com/zenjoy/docker-caddy-cloudflare-s3/blob/main/LICENSE)
 
