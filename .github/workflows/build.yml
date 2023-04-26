@@ -103,10 +103,8 @@ jobs:
           tags: ttl.sh/${{ needs.metadata.outputs.name }}:${{ github.sha }}
           labels: ${{ needs.metadata.outputs.labels }}
           platforms: ${{ needs.metadata.outputs.platforms }}
-          cache-from:
-            type=registry,ref=ttl.sh/${{ needs.metadata.outputs.name }}:${{
-            needs.metadata.outputs.branch }}
-          cache-to: type=inline,mode=max
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: Sign container images
         run: |
@@ -176,7 +174,8 @@ jobs:
           tags: ${{ needs.metadata.outputs.tags }}
           labels: ${{ needs.metadata.outputs.labels }}
           platforms: ${{ needs.metadata.outputs.platforms }}
-          cache-from: type=registry,ref=${{ needs.build.outputs.image-ref }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: Sign container images
         run: |
