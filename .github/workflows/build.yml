@@ -131,7 +131,7 @@ jobs:
       packages: write # GHCR
       contents: write # git tags
 
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
