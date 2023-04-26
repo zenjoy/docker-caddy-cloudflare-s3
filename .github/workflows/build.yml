@@ -18,7 +18,8 @@ env:
 jobs:
   metadata:
     name: Get image and repo details
-    runs-on: ubuntu-latest
+    runs-on:
+      group: Proxmox
 
     outputs:
       name: ${{ steps.name.outputs.name }}
@@ -70,7 +71,8 @@ jobs:
 
   build:
     name: Build container image
-    runs-on: ubuntu-latest
+    runs-on:
+      group: Proxmox
     needs: [metadata]
 
     permissions:
@@ -124,7 +126,8 @@ jobs:
   publish:
     name: Publish container image
     needs: [metadata, build, trivy]
-    runs-on: ubuntu-latest
+    runs-on:
+      group: Proxmox
 
     permissions:
       id-token: write # keyless Cosign signatures
