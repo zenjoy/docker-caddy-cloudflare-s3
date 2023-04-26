@@ -1,14 +1,14 @@
 # Caddy-Cloudflare-S3
 
-[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-zenjoy%2Fcaddy-cloudflare-s3-blue?style=flat)](https://hub.docker.com/r/zenjoy/caddy-cloudflare-s3)
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-zenjoy%2Fcaddy--cloudflare--s3-blue?style=flat)](https://hub.docker.com/r/zenjoy/caddy-cloudflare-s3)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/zenjoy/docker-caddy-cloudflare-s3?label=version)](https://github.com/zenjoy/docker-caddy-cloudflare-s3/tags)
 [![License](https://img.shields.io/github/license/zenjoy/docker-caddy-cloudflare-s3)](https://github.com/zenjoy/docker-caddy-cloudflare-s3/blob/main/LICENSE)
 
 The official [Caddy](https://hub.docker.com/_/caddy) Docker image with following modules added:
 
--   [caddy-dns/cloudflare](https://github.com/caddy-dns/cloudflare) allows DNS-01 ACME validation
--   [ss098/certmagic-s3](https://github.com/ss098/certmagic-s3) allows you to use any S3-compatible
-    provider as key/certificate storage backend
+- [caddy-dns/cloudflare](https://github.com/caddy-dns/cloudflare) allows DNS-01 ACME validation
+- [ss098/certmagic-s3](https://github.com/ss098/certmagic-s3) allows you to use any S3-compatible
+  provider as key/certificate storage backend
 
 Available on Docker Hub or GitHub Container Registry (GHCR) for AMD64, ARM64, and ARMv7.
 
