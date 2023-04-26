@@ -10,7 +10,7 @@ on:
 jobs:
   github-docker:
     name: Sync GitHub README with Docker Hub
-    runs-on: ubuntu-latest-16-cores
+    runs-on: ubuntu-latest-8-cores
 
     steps:
       - name: Checkout repo
