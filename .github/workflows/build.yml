@@ -94,21 +94,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
-      - name: Wait for build cache to sync
-        run: |
-          while gh run list \
-            -R "$GITHUB_REPOSITORY" \
-            -w "$WORKFLOW_NAME" \
-            --json status | jq -re 'map(select(.status != "completed")) | length > 0' >/dev/null; do
-            echo "Re-checking '$WORKFLOW_NAME' in $INTERVAL seconds..." && sleep "$INTERVAL"
-          done
-          echo "'$WORKFLOW_NAME' completed!"
-        env:
-          GH_TOKEN: ${{ github.token }}
-          WORKFLOW_NAME: Cache Sync
-          INTERVAL: 10
-        if: github.event_name == 'push'
-
       - name: Build Docker image
         uses: docker/build-push-action@v4
         id: build
