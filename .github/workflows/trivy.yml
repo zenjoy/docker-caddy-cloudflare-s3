@@ -18,7 +18,7 @@ env:
 jobs:
   trivy-repo:
     name: Scan repository
-    runs-on: ubuntu-latest-8-cores
+    runs-on: ubuntu-latest
 
     permissions:
       security-events: write # upload security results
@@ -51,7 +51,7 @@ jobs:
 
   trivy-docker:
     name: Scan container image
-    runs-on: ubuntu-latest-8-cores
+    runs-on: ubuntu-latest
 
     permissions:
       security-events: write # upload security results
