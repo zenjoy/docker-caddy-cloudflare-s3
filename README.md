@@ -10,7 +10,7 @@ The official [Caddy](https://hub.docker.com/_/caddy) Docker image with following
 - [ss098/certmagic-s3](https://github.com/ss098/certmagic-s3) allows you to use any S3-compatible
   provider as key/certificate storage backend
 
-Available on Docker Hub or GitHub Container Registry (GHCR) for AMD64, ARM64, and ARMv6.
+Available on Docker Hub or GitHub Container Registry (GHCR) for AMD64 and ARM64
 
 ```sh
 # Docker Hub

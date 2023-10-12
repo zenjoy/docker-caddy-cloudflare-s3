@@ -27,7 +27,7 @@ jobs:
       branch: ${{ steps.branch.outputs.branch }}
       labels: ${{ steps.metadata.outputs.labels }}
       tags: ${{ steps.metadata.outputs.tags }}
-      platforms: linux/amd64,linux/arm64,linux/arm/v6
+      platforms: linux/amd64,linux/arm64
 
     steps:
       - name: Checkout repo
